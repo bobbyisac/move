@@ -1,0 +1,16 @@
+body {
+    background-color: #dc2020;
+  }
+
+.centertext {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 70%;
+    padding: 70px 0;
+  }
+
+h1 {
+    font-size: 100px;
+}
