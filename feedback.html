@@ -9,6 +9,7 @@
 function showGradeOne()
     {
       document.getElementById("one").innerHTML = "Not at all";
+	  document.getElementById("two").innerHTML= "What went wrong?";
       document.getElementById("comment").style.display = "block";
 	  document.getElementById("remark").style.display = "block";
       document.getElementById("submit").style.top = "550px";
@@ -19,6 +20,7 @@ function showGradeOne()
 function showGradeTwo()
     {
       document.getElementById("one").innerHTML = "Unlikely";
+	  document.getElementById("two").innerHTML= "What went wrong?";
       document.getElementById("comment").style.display = "block";
 	  document.getElementById("remark").style.display = "block";
       document.getElementById("submit").style.top = "550px";
@@ -28,6 +30,7 @@ function showGradeTwo()
 function showGradeThree()
     {
       document.getElementById("one").innerHTML = "Maybe";
+	  document.getElementById("two").innerHTML= "What went wrong?";
       document.getElementById("comment").style.display = "block";
 	  document.getElementById("remark").style.display = "block";
       document.getElementById("submit").style.top = "550px";
@@ -36,6 +39,7 @@ function showGradeThree()
 function showGradeFour()
     {
       document.getElementById("one").innerHTML = "Likely";
+	  document.getElementById("two").innerHTML= "How could we improve?";
       document.getElementById("comment").style.display = "block";
 	  document.getElementById("remark").style.display = "block";
       document.getElementById("submit").style.top = "550px";
@@ -122,7 +126,6 @@ function change4()
         y.style.color="black";
     y.style.backgroundColor="white";
     }
-    
     document.getElementById("sub").disabled=false;
 }
 function change5()
@@ -160,7 +163,7 @@ function change5()
 	</div>
 	
 	<div style="text-align: center;padding-top: 100px;display: none;" id="comment" class="comment" >
-            <b>What went Wrong?</b><br><br>
+            <b><p id="two"></p></b><br><br>
             <input type="checkbox" name="wrong" value="Project Manager" id="PR"/><label id="pr" for="PR" onCLick="change()">Project Manager
 		</label>
 		<input type="checkbox" name="wrong" value="Crew" id="TMP"/><label id="tmp" for="TMP" onClick="change1()">Crew
@@ -183,7 +186,7 @@ function change5()
 	
 	<div id="Question" style="text-align: center;padding-top: 100px;">
 	</div>
-	<div id="submit" style="position:absolute;margin-top: 150px;left: 47%; justify-content: center;">
+	<div id="submit" style="position:absolute;padding-top: 200px;left: 47%; justify-content: center;">
             <!--<input type="submit" id="sub" value="Submit" disabled />  -->
 				<button id="sub" value="Submit" disabled onclick="window.location.href='https://move.direct/'">Submit</button>
 	</div>
