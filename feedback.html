@@ -145,7 +145,7 @@ function change5()
 	<div  id="grade" style="text-align: center;margin-top: 100px;">
             <b><p id="one">Would you recommend us to your colleagues?</p></b>
   </div>
-    <form action="#" method="post">
+    <form method="GET" action="https://move.direct/">
 	<div class="rating">
 		<input type="radio" name="star" id="star1" onCLick="showGradeFive()" value="5" /><label for="star1">
 		</label>
@@ -184,7 +184,8 @@ function change5()
 	<div id="Question" style="text-align: center;padding-top: 100px;">
 	</div>
 	<div id="submit" style="position:absolute;margin-top: 150px;left: 47%; justify-content: center;">
-            <input type="submit" id="sub" value="Submit" disabled />      
+            <!--<input type="submit" id="sub" value="Submit" disabled />  -->
+				<button id="sub" value="Submit" disabled onclick="window.location.href='https://move.direct/'">Submit</button>
 	</div>
     </form>
 </body>
