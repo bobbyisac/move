@@ -1,0 +1,191 @@
+<html>
+<head>
+	<title>Move - Project feedback</title>
+	<link rel="stylesheet" href="./css/feedback.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	 <script>
+function showGradeOne()
+    {
+      document.getElementById("one").innerHTML = "Not at all";
+      document.getElementById("comment").style.display = "block";
+	  document.getElementById("remark").style.display = "block";
+      document.getElementById("submit").style.top = "550px";
+	  
+
+    } 
+
+function showGradeTwo()
+    {
+      document.getElementById("one").innerHTML = "Unlikely";
+      document.getElementById("comment").style.display = "block";
+	  document.getElementById("remark").style.display = "block";
+      document.getElementById("submit").style.top = "550px";
+     
+    } 
+
+function showGradeThree()
+    {
+      document.getElementById("one").innerHTML = "Maybe";
+      document.getElementById("comment").style.display = "block";
+	  document.getElementById("remark").style.display = "block";
+      document.getElementById("submit").style.top = "550px";
+    } 
+
+function showGradeFour()
+    {
+      document.getElementById("one").innerHTML = "Likely";
+      document.getElementById("comment").style.display = "block";
+	  document.getElementById("remark").style.display = "block";
+      document.getElementById("submit").style.top = "550px";
+    } 
+
+function showGradeFive()
+    {
+      document.getElementById("one").innerHTML = "Definitely";
+      document.getElementById("comment").style.display = "none";
+	  document.getElementById("remark").style.display = "block";
+      document.getElementById("submit").style.top = "350px";
+      document.getElementById("sub").disabled=false;
+    } 
+function change()
+{   
+    var x=document.getElementById("PR");
+    var y=document.getElementById("pr")
+    if(x.checked==false){
+        
+        y.style.color="white";
+    y.style.backgroundColor="black";
+    }
+    else{
+        y.style.color="black";
+    y.style.backgroundColor="white";
+    }
+    document.getElementById("sub").disabled=false;
+}
+function change1()
+{
+    var x=document.getElementById("TMP");
+    var y=document.getElementById("tmp")
+    if(x.checked==false){
+        
+        y.style.color="white";
+    y.style.backgroundColor="black";
+    }
+    else{
+        y.style.color="black";
+    y.style.backgroundColor="white";
+    }
+    document.getElementById("sub").disabled=false;
+}
+function change2()
+{
+    var x=document.getElementById("CB");
+    var y=document.getElementById("cb")
+    if(x.checked==false){
+        
+        y.style.color="white";
+    y.style.backgroundColor="black";
+    }
+    else{
+        y.style.color="black";
+    y.style.backgroundColor="white";
+    }
+    document.getElementById("sub").disabled=false;
+}
+function change3()
+{
+    var x=document.getElementById("Nav");
+    var y=document.getElementById("nav")
+    if(x.checked==false){
+        
+        y.style.color="white";
+    y.style.backgroundColor="black";
+    }
+    else{
+        y.style.color="black";
+    y.style.backgroundColor="white";
+    }
+    document.getElementById("sub").disabled=false;
+}
+function change4()
+{
+    var x=document.getElementById("Dr");
+    var y=document.getElementById("dr")
+    if(x.checked==false){
+        
+        y.style.color="white";
+    y.style.backgroundColor="black";
+    }
+    else{
+        y.style.color="black";
+    y.style.backgroundColor="white";
+    }
+    
+    document.getElementById("sub").disabled=false;
+}
+function change5()
+{
+    var x=document.getElementById("Other");
+    var y=document.getElementById("ot")
+    if(x.checked==false){
+        
+        y.style.color="white";
+    y.style.backgroundColor="black";
+    }
+    else{
+        y.style.color="black";
+    y.style.backgroundColor="white";
+    }
+    document.getElementById("sub").disabled=false;
+}
+    </script>
+  
+	<div  id="grade" style="text-align: center;margin-top: 100px;">
+            <b><p id="one">Would you recommend us to your colleagues?</p></b>
+  </div>
+    <form action="#" method="post">
+	<div class="rating">
+		<input type="radio" name="star" id="star1" onCLick="showGradeFive()" value="5" /><label for="star1">
+		</label>
+		<input type="radio" name="star" id="star2" onCLick="showGradeFour()" value="4" /><label for="star2">
+		</label>
+		<input type="radio" name="star" id="star3" onCLick="showGradeThree()" value="3" /><label for="star3">
+		</label>
+		<input type="radio" name="star" id="star4" onCLick="showGradeTwo()" value="2" /><label for="star4">
+		</label>
+		<input type="radio" name="star" id="star5" onCLick="showGradeOne()" value="1" /><label for="star5">
+		</label>
+	</div>
+	
+	<div style="text-align: center;padding-top: 100px;display: none;" id="comment" class="comment" >
+            <b>What went Wrong?</b><br><br>
+            <input type="checkbox" name="wrong" value="Project Manager" id="PR"/><label id="pr" for="PR" onCLick="change()">Project Manager
+		</label>
+		<input type="checkbox" name="wrong" value="Crew" id="TMP"/><label id="tmp" for="TMP" onClick="change1()">Crew
+		</label></br></br>
+		<input type="checkbox" name="wrong" value="Quality of work" id="CB"/><label id="cb" for="CB" onClick="change2()">Quality of work
+		</label>
+		<input type="checkbox" name="wrong" value="Speed and delivery" id="Nav"/><label id="nav" for="Nav" onClick="change3()">Speed and delivery
+		</label></br></br>
+		<input type="checkbox" name="wrong" value="Pricing" id="Dr"/><label id="dr" for="Dr" onClick="change4()">Pricing
+		</label>
+		<input type="checkbox" name="wrong" value="other" id="Other"/><label id="ot" for="Other" onClick="change5()">Other
+		</label>
+	</div>
+	
+	<div style="text-align: center; position: absolute;margin-top: 100px;left: 37%; display: none;" id="remark" class="rem" >
+            <b>Help us get better at this:</b><br><br>
+			<input type="text" name="feed" placeholder="Tell us more" id="Tell us more" cols="40" rows="5" style="width:500px; height:100px;" />
+          
+	</div>
+	
+	<div id="Question" style="text-align: center;padding-top: 100px;">
+	</div>
+	<div id="submit" style="position:absolute;margin-top: 150px;left: 47%; justify-content: center;">
+            <input type="submit" id="sub" value="Submit" disabled />      
+	</div>
+    </form>
+</body>
+</html>
