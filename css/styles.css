@@ -1,10 +1,10 @@
 body {
-    background-color: #dc2020;
+    background-color: white;
   }
 
 .centertext {
     text-align: center;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     width: 70%;
