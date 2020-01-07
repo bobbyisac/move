@@ -1,5 +1,8 @@
 <html>
 <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Move - Project feedback</title>
 	<link rel="stylesheet" href="./css/feedback.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -12,7 +15,6 @@ function showGradeOne()
 	  document.getElementById("two").innerHTML= "What went wrong?";
       document.getElementById("comment").style.display = "block";
 	  document.getElementById("remark").style.display = "block";
-      document.getElementById("submit").style.top = "550px";
 	  
 
     } 
@@ -23,7 +25,6 @@ function showGradeTwo()
 	  document.getElementById("two").innerHTML= "What went wrong?";
       document.getElementById("comment").style.display = "block";
 	  document.getElementById("remark").style.display = "block";
-      document.getElementById("submit").style.top = "550px";
      
     } 
 
@@ -33,7 +34,6 @@ function showGradeThree()
 	  document.getElementById("two").innerHTML= "What went wrong?";
       document.getElementById("comment").style.display = "block";
 	  document.getElementById("remark").style.display = "block";
-      document.getElementById("submit").style.top = "550px";
     } 
 
 function showGradeFour()
@@ -42,7 +42,6 @@ function showGradeFour()
 	  document.getElementById("two").innerHTML= "How could we improve?";
       document.getElementById("comment").style.display = "block";
 	  document.getElementById("remark").style.display = "block";
-      document.getElementById("submit").style.top = "550px";
     } 
 
 function showGradeFive()
@@ -50,7 +49,6 @@ function showGradeFive()
       document.getElementById("one").innerHTML = "Definitely";
       document.getElementById("comment").style.display = "none";
 	  document.getElementById("remark").style.display = "block";
-      document.getElementById("submit").style.top = "350px";
       document.getElementById("sub").disabled=false;
     } 
 function change()
@@ -178,7 +176,7 @@ function change5()
 		</label>
 	</div>
 	
-	<div style="text-align: center; position: absolute;margin-top: 100px;left: 37%; display: none;" id="remark" class="rem" >
+	<div style="text-align: center; margin: auto; display: none; padding-top: 100px;" id="remark" class="rem" >
             <b>Help us get better at this:</b><br><br>
 			<input type="text" name="feed" placeholder="Tell us more" id="Tell us more" cols="40" rows="5" style="width:500px; height:100px;" />
           
@@ -186,7 +184,7 @@ function change5()
 	
 	<div id="Question" style="text-align: center;padding-top: 100px;">
 	</div>
-	<div id="submit" style="position:absolute;padding-top: 200px;left: 47%; justify-content: center;">
+	<div id="submit" style="margin: auto; text-align: center; padding-top: 10px; justify-content: center;">
             <!--<input type="submit" id="sub" value="Submit" disabled />  -->
 				<button id="sub" value="Submit" disabled onclick="window.location.href='https://move.direct/'">Submit</button>
 	</div>
