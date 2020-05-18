@@ -3,7 +3,7 @@ body {
     margin-top: 50px;
   }
 
-.centertext {
+.center {
     text-align: center;
     color: #514d80;
     font-family: 'Open Sans';
@@ -11,6 +11,110 @@ body {
     width: 90%;
   }
 
+.left {
+  float: left;
+  width: 45%;
+  text-align: right;
+  margin-top: 3%;
+}
+
+.middle {
+  float: left;
+  width: 10%;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.right {
+  float: left;
+  width: 45%;
+  text-align: left;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#img-logo {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+}
+
+#quote {
+  padding-top: 50px;
+}
+
+#link-beginning {
+  padding-top: 100px;
+}
+
 a {
-  color: #09d1c7;
+  color: #ac5e4a;
+}
+
+@media screen and (min-width: 451px) and (max-width: 899px) {
+  body {
+    margin-top: 30px;
+  }
+
+  .left {
+    width: 40%;
+    text-align: right;
+    margin-top: 3%;
+  }
+  
+  .middle {
+    width: 20%;
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .right {
+    width: 40%;
+    text-align: left;
+  }
+
+  #quote {
+    padding-top: 30px;
+  }
+  
+  #link-beginning {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    margin-top: 30px;
+  }
+
+  .left {
+    margin-top: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .middle {
+    margin-top: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .right {
+    margin-top: 0%;
+    width: 100%;
+    text-align: center;
+  }
+
+  #quote {
+    padding-top: 30px;
+  }
+  
+  #link-beginning {
+    padding-top: 60px;
+  }
 }
